@@ -1,4 +1,4 @@
-package oocl.eshop.daoimpl.test;
+package oocl.eshop.dao.impl.test;
 
 import java.util.ArrayList;
 import java.util.List;

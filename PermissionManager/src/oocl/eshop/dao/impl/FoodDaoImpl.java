@@ -1,4 +1,4 @@
-package oocl.eshop.daoimpl;
+package oocl.eshop.dao.impl;
 
 import java.util.List;
 

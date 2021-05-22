@@ -1,4 +1,4 @@
-package oocl.eshop.daoimpl.test;
+package oocl.eshop.dao.impl.test;
 
 import oocl.eshop.dao.PermissionDao;
 import oocl.eshop.po.Permission;
