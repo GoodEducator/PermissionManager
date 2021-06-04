@@ -6,24 +6,34 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import oocl.eshop.po.Permission;
+import oocl.eshop.service.PermissionManager;
+import oocl.eshop.service.impl.PermissionManagerImpl;
+
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class UpdatePermissionServlet
  */
-public class LoginServlet extends HttpServlet {
+public class UpdatePermissionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	PermissionManager pManager = new PermissionManagerImpl();
        
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public UpdatePermissionServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		if(request.getParameter("username").equals("admin")&&request.getParameter("password").equals("admin")){
-			request.getRequestDispatcher("main.jsp").forward(request, response);
-		}
-		else {
-			response.sendRedirect("index.jsp");
-		}
+		int mId = Integer.parseInt(request.getParameter("mId"));
+		int mStatus = Integer.parseInt(request.getParameter("status"));
+		Permission p = new Permission(mId, mStatus);
+		pManager.updatePermission(p);
+		request.getRequestDispatcher("mian.jsp").forward(request, response);	
 	}
 
 	/**
