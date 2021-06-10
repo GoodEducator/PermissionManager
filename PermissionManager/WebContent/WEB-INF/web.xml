@@ -20,15 +20,4 @@
     <url-pattern>/LoginServlet</url-pattern>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>UpdatePermissionServlet</display-name>
-    <servlet-name>UpdatePermissionServlet</servlet-name>
-    <servlet-class>oocl.eshop.servlet.UpdatePermissionServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>UpdatePermissionServlet</servlet-name>
-    <url-pattern>/UpdatePermissionServlet</url-pattern>
-    <url-pattern>/updatepermission</url-pattern>
-  </servlet-mapping>
 </web-app>

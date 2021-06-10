@@ -12,8 +12,9 @@ public class MerchantDaoImplTest implements MerchantDao{
 	public List<Merchant> findAllMerchants() {
 		List<Merchant> mers=new ArrayList<Merchant>();
 		for(int i=1;i<10;i++){
-			Merchant merchant = new Merchant("Knife"+i, i*100+"", "123456", "12345", "testPath", "haha", "heihei", "testPath");
+			Merchant merchant = new Merchant("Kinva"+i, i*100+"", "123456", "12345", "http://www.005.tv/uploads/allimg/160617/1P3391451-3.jpg", "haha", "heihei", "http://www.005.tv/uploads/allimg/160617/1P3391451-3.jpg");
 			merchant.setmId(i);
+			merchant.setmStatus( (int)(Math.random()*4)+1);
 			mers.add(merchant);
 		}
 		return mers;

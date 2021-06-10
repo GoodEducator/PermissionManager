@@ -8,7 +8,7 @@
 <meta name="Author" content="$hekh@r d-Ziner, CSSJUNTION.com">
 <link rel="stylesheet" type="text/css" href="./Simple Login Form_files/reset.css">
 <link rel="stylesheet" type="text/css" href="./Simple Login Form_files/structure.css">
-<title>Insert title here</title>
+<title>后台登录</title>
 </head>
 <body>
 <form class="box login" action="login" method="post">
@@ -19,7 +19,7 @@
 	  <input type="password" tabindex="2" name="password">
 	</fieldset>
 	<footer>
-<!--    <label><input type="checkbox" tabindex="3">Keep me logged in</label>-->	
+	  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
 	  <input type="submit" class="btnLogin" value="Login" tabindex="4">
 	</footer>
 </form>
