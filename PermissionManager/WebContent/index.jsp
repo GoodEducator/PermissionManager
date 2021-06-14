@@ -19,7 +19,7 @@
 	  <input type="password" tabindex="2" name="password">
 	</fieldset>
 	<footer>
-	  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
+<!--    <label><input type="checkbox" tabindex="3">Keep me logged in</label>-->	
 	  <input type="submit" class="btnLogin" value="Login" tabindex="4">
 	</footer>
 </form>
